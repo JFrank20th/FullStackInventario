@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C91F2093-120B-445D-8F2F-A4010034790F}|Dal\\Dal.csproj|c:\\users\\1033769278.covisian\\desktop\\proyectos\\inventarios\\backend\\inventarios\\dal\\apidal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91F2093-120B-445D-8F2F-A4010034790F}|Dal\\Dal.csproj|solutionrelative:dal\\apidal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\inventarios\\class\\applicationauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|solutionrelative:inventarios\\class\\applicationauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3ACA6C9-0803-4FE6-9FED-37307F51A8DF}|Business\\Business.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\business\\apibusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3ACA6C9-0803-4FE6-9FED-37307F51A8DF}|Business\\Business.csproj|solutionrelative:business\\apibusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\inventarios\\controllers\\backendcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|solutionrelative:inventarios\\controllers\\backendcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\inventarios\\app_start\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|solutionrelative:inventarios\\app_start\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\inventarios\\class\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|solutionrelative:inventarios\\class\\aes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A584C-61D1-4D3C-999D-4B4F6306C2B5}|Dto\\Dto.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\dto\\getinventariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A584C-61D1-4D3C-999D-4B4F6306C2B5}|Dto\\Dto.csproj|solutionrelative:dto\\getinventariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B36A584C-61D1-4D3C-999D-4B4F6306C2B5}|Dto\\Dto.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\dto\\centrocostosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B36A584C-61D1-4D3C-999D-4B4F6306C2B5}|Dto\\Dto.csproj|solutionrelative:dto\\centrocostosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\inventarios\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA8A8EB5-31B0-4080-8BA2-9DC2ACB1F569}|Inventarios\\Inventarios.csproj|solutionrelative:inventarios\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91F2093-120B-445D-8F2F-A4010034790F}|Dal\\Dal.csproj|C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\dal\\employeesdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91F2093-120B-445D-8F2F-A4010034790F}|Dal\\Dal.csproj|solutionrelative:dal\\employeesdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\App_Start\\Startup.cs",
+              "RelativeDocumentMoniker": "Inventarios\\App_Start\\Startup.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\App_Start\\Startup.cs",
+              "RelativeToolTip": "Inventarios\\App_Start\\Startup.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:25:08.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AES.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Class\\AES.cs",
+              "RelativeDocumentMoniker": "Inventarios\\Class\\AES.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Class\\AES.cs",
+              "RelativeToolTip": "Inventarios\\Class\\AES.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowIYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:23:55.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationAuthProvider.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Class\\ApplicationAuthProvider.cs",
+              "RelativeDocumentMoniker": "Inventarios\\Class\\ApplicationAuthProvider.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Class\\ApplicationAuthProvider.cs",
+              "RelativeToolTip": "Inventarios\\Class\\ApplicationAuthProvider.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA5wA8AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T17:22:42.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeesDal.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dal\\EmployeesDal.cs",
+              "RelativeDocumentMoniker": "Dal\\EmployeesDal.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dal\\EmployeesDal.cs",
+              "RelativeToolTip": "Dal\\EmployeesDal.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T21:24:48.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Inventarios\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "Inventarios\\Controllers\\EmployeesController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAA9wDQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T21:21:09.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CentroCostosDto.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dto\\CentroCostosDto.cs",
+              "RelativeDocumentMoniker": "Dto\\CentroCostosDto.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dto\\CentroCostosDto.cs",
+              "RelativeToolTip": "Dto\\CentroCostosDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T21:19:17.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetInventarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dto\\GetInventarioDto.cs",
+              "RelativeDocumentMoniker": "Dto\\GetInventarioDto.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dto\\GetInventarioDto.cs",
+              "RelativeToolTip": "Dto\\GetInventarioDto.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA3wCgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:45:40.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiDal.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dal\\ApiDal.cs",
+              "RelativeDocumentMoniker": "Dal\\ApiDal.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Dal\\ApiDal.cs",
+              "RelativeToolTip": "Dal\\ApiDal.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAADwv0oAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:37:46.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Business\\ApiBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\ApiBusiness.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Business\\ApiBusiness.cs",
+              "RelativeToolTip": "Business\\ApiBusiness.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:37:46.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BackendController.cs",
+              "DocumentMoniker": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Controllers\\BackendController.cs",
+              "RelativeDocumentMoniker": "Inventarios\\Controllers\\BackendController.cs",
+              "ToolTip": "C:\\Users\\1033769278.COVISIAN\\Desktop\\Proyectos\\inventarios\\Backend\\Inventarios\\Inventarios\\Controllers\\BackendController.cs",
+              "RelativeToolTip": "Inventarios\\Controllers\\BackendController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:36:45.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 381,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

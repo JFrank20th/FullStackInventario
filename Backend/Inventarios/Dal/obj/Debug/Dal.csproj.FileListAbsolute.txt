@@ -1,0 +1,77 @@
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.AssemblyReference.cache
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.AssemblyReference.cache
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.AssemblyReference.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\bin\Debug\Dal.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\bin\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\bin\Debug\Dapper.xml
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.AssemblyReference.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.csproj.Up2Date
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dal\obj\Debug\Dal.pdb

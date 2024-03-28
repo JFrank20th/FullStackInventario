@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Covisian - Login</title>
+    <link rel="shortcut icon" href="assets/media/image/IconoGSS.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./vendors/Login/bootstrap.min.css" type="text/css">
+    <!-- Material design icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- Latform styles -->
+    <link rel="stylesheet" href="./vendors/Login/latform-style-6.css" type="text/css">
+</head>
+
+<body>
+    <div class="form-shape-wrapper">
+        <div class="form-shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+                <path fill="red" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="form-wrapper">
+        <div class="container">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col d-none d-lg-flex"
+                        style="background: url('./assets/media/image/ACADEMY_LOGO_2.jpg');">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                </br>
+                                <div class="text-center">
+                                    <img style=" width: 80%; height: auto;" src="./assets/media/image/descarga.png"
+                                        alt="logo">
+                                </div>
+                                </br>
+                                </br>
+
+                                <!-- <div class="my-3 text-center ">
+                                    <h3 class="font-weight-bold"></h3>
+                                    <p class="text-muted"></p>
+                                </div> -->
+                                <!-- Formulario de inicio de sesion -->
+                                <form id="FormInicio" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <div class="form-icon-wrapper">
+                                            <input id="Username" type="text" class="form-control"
+                                                placeholder="Ingresa usuario" autofocus required>
+                                            <i class="form-icon-left mdi mdi-email"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-icon-wrapper">
+                                            <input id="Password" type="password" class="form-control"
+                                                placeholder="Ingresa contraseña" required>
+                                            <i class="form-icon-left mdi mdi-lock"></i>
+                                            <a href="#" class="form-icon-right password-show-hide"
+                                                title="ver contraseña">
+                                                <i class="mdi mdi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="text-center mb-4">
+                                        No puedes acceder? <a id="Restablecer" href="#">Restablece tu contraseña ahora</a>.
+                                    </p>
+                                    <button id="loguear" class="btn btn-primary btn-block mb-4"
+                                        onclick="AutenticarUsuario()">Ingresar</button>
+                                </form>
+
+                                <!-- Formulario de cambio de contraseña -->
+                                <form id="FormCambio" onsubmit="return false;" hidden="hidden">
+                                    <p class="text-muted" style="text-align: center;">Ingresa tu nueva contraseña</p>
+                                    <br>
+                                    <div class="form-group">
+                                        <div class="form-icon-wrapper">
+                                            <input id="NewPassword" type="password" class="form-control"
+                                                placeholder="Nueva Contraseña" required>
+                                            <i class="form-icon-left mdi mdi-lock"></i>
+                                            <a href="#" class="form-icon-right password-show-hide"
+                                                title="ver contraseña">
+                                                <i class="mdi mdi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-icon-wrapper">
+                                            <input id="RepeatNewPassword" type="password" class="form-control"
+                                                placeholder="Repetir contraseña" required>
+                                            <i class="form-icon-left mdi mdi-lock"></i>
+                                            <a href="#" class="form-icon-right password-show-hide"
+                                                title="ver contraseña">
+                                                <i class="mdi mdi-eye"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <button id="loguear" class="btn btn-primary btn-block mb-4"
+                                        onclick="ActualizarContrasena()">Actualizar</button>
+                                </form>
+
+                                <!-- Formulario de reseteo de contraseña -->
+                                <form id="FormReset" onsubmit="return false;" hidden="hidden">
+                                    <div class="my-1 text-center text-lg-left">
+                                        <h4 style="text-align: center;" class="font-weight-bold">Restaurar Contraseña</h4>
+                                        <p style="text-align: center;" class="text-muted">Escribe tu correo para restaurar la contraseña.</p>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <div class="form-icon-wrapper">
+                                            <input type="email" class="form-control" id="email" placeholder="Ingresa Correo" autofocus required>
+                                            <i class="form-icon-left mdi mdi-email"></i>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <button class="btn btn-primary btn-block mb-4">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src="./vendors/Login/jquery.min.js"></script>
+
+    <script src="vendors/Rutas/page.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="vendors/bundle.js"></script>
+    <script src="assets/js/examples/sweet-alert.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./vendors/Login/bootstrap.min.js"></script>
+    <!-- Latform scripts -->
+    <script src="./vendors/Login/latform.min.js"></script>
+
+
+</body>
+
+</html>

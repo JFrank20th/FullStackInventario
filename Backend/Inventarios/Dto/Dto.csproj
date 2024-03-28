@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B36A584C-61D1-4D3C-999D-4B4F6306C2B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dto</RootNamespace>
+    <AssemblyName>Dto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveTemplateMailDto.cs" />
+    <Compile Include="ActualizarDescuentoDto.cs" />
+    <Compile Include="ApiDocumentDto.cs" />
+    <Compile Include="CaducidadContrasenaDto.cs" />
+    <Compile Include="CambiarContrasenaDto.cs" />
+    <Compile Include="CargoDto.cs" />
+    <Compile Include="CentroCostosDto.cs" />
+    <Compile Include="ChangeStateTemplateDto.cs" />
+    <Compile Include="CiudadDto.cs" />
+    <Compile Include="CreacionActaDto.cs" />
+    <Compile Include="CreateInventarioDto.cs" />
+    <Compile Include="CreatePermisosAccionesDto.cs" />
+    <Compile Include="CreatePermisosModulosDto.cs" />
+    <Compile Include="CreateRolDto.cs" />
+    <Compile Include="DashboardInventarioDto.cs" />
+    <Compile Include="DevolucionAsignacionMasivaDto.cs" />
+    <Compile Include="DevolucionMasivaProveedorDto.cs" />
+    <Compile Include="DocumentApiDto.cs" />
+    <Compile Include="DocumentInfoDto.cs" />
+    <Compile Include="EmployeesDto.cs" />
+    <Compile Include="EstadoEquipoDto.cs" />
+    <Compile Include="FileObject.cs" />
+    <Compile Include="GetAccesoAccionesDto.cs" />
+    <Compile Include="GetAccionesDto.cs" />
+    <Compile Include="GetActasDto.cs" />
+    <Compile Include="GetApiDocumentDto.cs" />
+    <Compile Include="GetAsignacionDto.cs" />
+    <Compile Include="GetBodegasDto.cs" />
+    <Compile Include="GetCeCoDto.cs" />
+    <Compile Include="GetDescuentosDto.cs" />
+    <Compile Include="GetDiscoDto.cs" />
+    <Compile Include="GetEmailDto.cs" />
+    <Compile Include="GetEmailUsaurioDto.cs" />
+    <Compile Include="GetFirmaImagenDto.cs" />
+    <Compile Include="GetFotoDto.cs" />
+    <Compile Include="GetIdentificacionUsuariosDto.cs" />
+    <Compile Include="GetInventarioDto.cs" />
+    <Compile Include="GetMarcasDto.cs" />
+    <Compile Include="GetModulosDto.cs" />
+    <Compile Include="GetProcesadoresDto.cs" />
+    <Compile Include="GetProveedoresDto.cs" />
+    <Compile Include="GetRAMDto.cs" />
+    <Compile Include="GetTemplateMailDto.cs" />
+    <Compile Include="GetTipoActivoDto.cs" />
+    <Compile Include="GetDatosTokensUsuarioDto.cs" />
+    <Compile Include="GetTokensUsuarioDto.cs" />
+    <Compile Include="GuardarDescuentoDto.cs" />
+    <Compile Include="IdEmployeesDto.cs" />
+    <Compile Include="InactivarRolesDto.cs" />
+    <Compile Include="IdentificacionDto.cs" />
+    <Compile Include="InactivarUsuariosDto.cs" />
+    <Compile Include="InsertTemplateMailDto.cs" />
+    <Compile Include="NoColumnsDto.cs" />
+    <Compile Include="SAInventarioDto.cs" />
+    <Compile Include="GetTipoFechaDto.cs" />
+    <Compile Include="GetTipoPlantillasDto.cs" />
+    <Compile Include="GetTokensByIdDto.cs" />
+    <Compile Include="GetTokensFijosDto.cs" />
+    <Compile Include="GetTokensFirmasByIdDto.cs" />
+    <Compile Include="GetUbicacionDto.cs" />
+    <Compile Include="GuardarInventarioDto.cs" />
+    <Compile Include="HistoricoDto.cs" />
+    <Compile Include="InsertActaDto .cs" />
+    <Compile Include="InsertaRolDto.cs" />
+    <Compile Include="InsertTokenDto.cs" />
+    <Compile Include="ModuloOperacionDto.cs" />
+    <Compile Include="ModulosDto.cs" />
+    <Compile Include="PertmisosRolDto.cs" />
+    <Compile Include="PisosDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuestosDto.cs" />
+    <Compile Include="ReportesDto.cs" />
+    <Compile Include="RolesDto.cs" />
+    <Compile Include="SedesDto.cs" />
+    <Compile Include="SerialesDto.cs" />
+    <Compile Include="SolicitudesStorage.cs" />
+    <Compile Include="SuspendPermissionsDto.cs" />
+    <Compile Include="TipoIdenficacionDto.cs" />
+    <Compile Include="tokensDto.cs" />
+    <Compile Include="UpdateDescriptionDto.cs" />
+    <Compile Include="UpdateFirmaImagenDto.cs" />
+    <Compile Include="UpdateInventarioDto.cs" />
+    <Compile Include="UpdateNoColumnsDto.cs" />
+    <Compile Include="UpdatePermisosModulosDto.cs" />
+    <Compile Include="UpdateTemplateMailDto.cs" />
+    <Compile Include="UpdateTokenDto.cs" />
+    <Compile Include="UserLoginDto.cs" />
+    <Compile Include="UsuariosDto.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,42 @@
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csprojAssemblyReference.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csprojAssemblyReference.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csprojAssemblyReference.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1033769278\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventario\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.AssemblyReference.cache
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.AssemblyReference.cache
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1000936085.COVISIAN\Documents\proyectos nuevos\Inventario GIT\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.AssemblyReference.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\Inventarios\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dto\bin\Debug\Dto.pdb
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.AssemblyReference.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.csproj.CoreCompileInputs.cache
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.dll
+C:\Users\1033769278.COVISIAN\Desktop\Proyectos\inventarios\Backend\Inventarios\Dto\obj\Debug\Dto.pdb

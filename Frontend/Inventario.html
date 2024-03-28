@@ -1,0 +1,1785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inventario</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/media/image/IconoGSS40.png" />
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+    <!-- App styles -->
+    <link rel="stylesheet" href="vendors/form-wizard/jquery.steps.css" type="text/css">
+    <link rel="stylesheet" href="vendors/prism/prism.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/app.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="vendors/lightbox/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css" type="text/css">
+    <link rel="stylesheet" href="vendors/multiSelect/bootstrap-multiselect.css" type="text/css">
+
+    <!-- Data-tables -->
+    <link rel="stylesheet" href="vendors/dataTable/dataTables.min.css" type="text/css">
+    <link rel="stylesheet" href="vendors/Buttons-2.2.3/css/buttons.dataTables.css" type="text/css">
+    <!-- Material Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+</head>
+
+<body class="navigation-toggle-one">
+    <div class="preloader" id="preloader">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+            </div>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <ul class="navbar-nav">
+                <!-- begin::navigation-toggler -->
+                <li class="nav-item navigation-toggler">
+                    <a href="#" class="nav-link" title="Ocultar navegación" data-toggle="tooltip"
+                        data-placement="right">
+                        <span class="material-symbols-outlined">arrow_left_alt</span>
+                    </a>
+                </li>
+                <li class="nav-item navigation-toggler mobile-toggler">
+                    <a href="#" class="nav-link" title="Mostrar navegación" data-toggle="tooltip"
+                        data-placement="right">
+                        <span class="material-symbols-outlined">menu</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar-nav">
+                <!-- begin::header search -->
+                <!-- <li class="nav-item">
+                    <a href="#" class="nav-link" title="Buscar" data-toggle="dropdown">
+                        <span class="material-symbols-outlined">search</span>
+                    </a>
+                    <div class="dropdown-menu p-2 dropdown-menu-right">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-prepend">
+                                    <button class="btn" type="button"><i data-feather="search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li> -->
+                <!-- begin::header minimize/maximize -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                        <span class="maximize material-symbols-outlined">fullscreen</span>
+                        <span class="minimize material-symbols-outlined">close_fullscreen</span>
+                    </a>
+                </li>
+                <!-- begin::header notification dropdown -->
+                <!-- <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Notificaciones" data-toggle="dropdown">
+                        <span class="material-symbols-outlined">notifications_active</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center d-flex justify-content-between"
+                            data-backround-image="assets/media/image/image1.jpg">
+                            <h6 class="mb-0">Notifications</h6>
+                            <small class="font-size-11 opacity-7">1 unread notifications</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li><a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span
+                                                    class="avatar-title bg-success-bright text-success rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">New customer
+                                                registered
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                    class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">20 min ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3"><span>Old notifications</span></li>
+                                <li><a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span
+                                                    class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                    <i class="ti-package"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">New Order
+                                                Recieved
+                                                <i title="Mark as unread" data-toggle="tooltip"
+                                                    class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">45 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item"><a href="#">Mark All Read</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li> -->
+                <!-- begin::Configuraciones -->
+                <!-- <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Configuraciones" data-toggle="dropdown">
+                        <span class="material-symbols-outlined">settings</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center d-flex justify-content-between"
+                            data-backround-image="assets/media/image/image1.jpg">
+                            <h6 class="mb-0">Configuraciones</h6>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-switch"><input type="checkbox"
+                                            class="custom-control-input" id="customSwitch1" checked><label
+                                            class="custom-control-label" for="customSwitch1">Allow
+                                            notifications.</label></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="custom-control custom-switch"><input type="checkbox"
+                                            class="custom-control-input" id="customSwitch2"><label
+                                            class="custom-control-label" for="customSwitch2">Hide user requests</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+            <!-- begin::mobile header toggler -->
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item header-toggler">
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">arrow_downward</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <!-- Navegacion -->
+        <div class="navigation">
+            <div class="navigation-menu-tab">
+                <div>
+                    <div id="NameHover" class="navigation-menu-tab-header" data-toggle="tooltip" title=""
+                        data-placement="right">
+                        <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false">
+                            <figure class="avatar avatar-sm">
+                                <img src="assets/media/image/user4.png" class="rounded-circle" alt="avatar">
+                            </figure>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                            <div class="p-3 text-center" data-backround-image="assets/media/image/image1.jpg">
+                                <figure class="avatar mb-3">
+                                    <img src="assets/media/image/user4.png" class="rounded-circle" alt="image">
+                                </figure>
+                                <h6 id="nameUser" class="d-flex align-items-center justify-content-center"></h6>
+                                <small id="roleUser"></strong></small>
+                            </div>
+                            <div class="dropdown-menu-body">
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item text-danger"
+                                        data-sidebar-target="#settings">Salir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-grow-1">
+                    <ul id="MenuPadre">
+                        <!-- Menu padre de Iconos -->
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+
+                        <li><a href="index.html" data-toggle="tooltip" data-placement="right" title="Salir">
+                                <span class="material-symbols-outlined">logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- begin::navigation menu -->
+            <div class="navigation-menu-body">
+                <!-- begin::navigation-logo -->
+                <div class="text-center" id="navigation-logo">
+                    <a href="Inventario.html">
+                        <img style=" width: 85%; height: auto;" class="logo" src="assets/media/image/COVISIAN.png"
+                            alt="logo">
+                    </a>
+                </div>
+                <div class="navigation-menu-group" id="MenuHijo">
+                    <!-- Menu de cada modulo -->
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="contenidoBreadCrumb">
+                <!-- <breadcrumb-breadcrumb id="contenidoBreadCrumbInventario"></breadcrumb-breadcrumb> -->
+            </div>
+
+            <!-- Modulo del inventario -->
+            <div id="contenidoGeneral">
+                <div class="container-fluid" id="DatosInv">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <!-- Dashboard informativo -->
+                            <div class="row custom-grid">
+                                <div class="col-1 custom-col-first">
+                                    <div class="card card-body" style="padding: 10px">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Filtros</h5>
+                                        </div>
+                                        <li class="nav-item dropdown " style="margin-left: -5px; margin-top: -7px;">
+                                            <a href="#" class="nav-link nav-link-notify" title="Filtros"
+                                                data-toggle="dropdown">
+                                                <!-- <i data-feather="filter" ></i> -->
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 40px; color: green;">filter_list</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                                                <div class="p-4 text-center d-flex justify-content-between"
+                                                    data-backround-image="assets/media/image/image1.jpg">
+                                                    <h6 class="mb-0">Filtrar Dashboard</h6>
+                                                </div>
+                                                <div class="col-md-12 mb-6">
+                                                    <!-- <div class="form-group">
+                                                        <label>Select</label>
+
+                                                        <select class='form-control' id='demo-multiple-select'
+                                                            multiple="multiple">
+                                                            <option>Select</option>
+                                                            <option value="France">France</option>
+                                                            <option selected value="Brazil">Brazil</option>
+                                                            <option selected value="Yemen">Yemen</option>
+                                                            <option selected value="United States">United States
+                                                            </option>
+                                                            <option value="China">China</option>
+                                                            <option value="Argentina">Argentina</option>
+                                                            <option value="Bulgaria">Bulgaria</option>
+                                                        </select>
+                                                    </div> -->
+                                                    <div class="form-group">
+                                                        <label>Nombre Activo</label>
+                                                        <select class="form-control" id="FiltroNombreActivo">
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Marca</label>
+                                                        <select class="form-control" id="FiltroMarca">
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Proveedor</label>
+                                                        <select class="form-control" id="FiltroProveedor">
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="p-2 text-right">
+                                                    <ul class="list-inline small">
+                                                        <button id="botonFiltroDashboard" type="button"
+                                                            class="btn btn-primary btn-sm">Aplicar</button>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="col custom-col">
+                                    <div class="card card-body" style="padding: 10px">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Asignación</h5>
+                                        </div>
+                                        <div class="progress " style="height: 5px">
+                                            <div id="Asignado" class="progress-bar bg-success" role="progressbar"
+                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div id="Libre" class="progress-bar bg-info" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6 class="text-success font-weight-bold"><span
+                                                            id="numeroAsignado"></span> <span
+                                                            id="porcentajeAsignado"></span></h6>
+                                                    <div>Asignado</div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h6 class="text-info font-weight-bold"><span
+                                                            id="numeroLibre"></span> <span id="porcentajeLibre"></span>
+                                                    </h6>
+                                                    <div>Libre</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col custom-col">
+                                    <div class="card card-body" style="padding: 10px">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Estado</h5>
+                                        </div>
+                                        <div class="progress " style="height: 5px">
+                                            <div id="Activo" class="progress-bar bg-secondary" role="progressbar"
+                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div id="Inactivo" class="progress-bar bg-warning" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6 class="text-secondary font-weight-bold"><span
+                                                            id="numeroActivo"></span> <span
+                                                            id="porcentajeActivo"></span></h6>
+                                                    <div>Activo</div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h6 class="text-warning font-weight-bold"><span
+                                                            id="numeroInactivo"></span> <span
+                                                            id="porcentajeInactivo"></span></h6>
+                                                    <div>Inactivo</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col custom-col">
+                                    <div class="card card-body" style="padding: 10px">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Soporte</h5>
+                                        </div>
+                                        <div class="progress " style="height: 5px">
+                                            <div id="SiSoporte" class="progress-bar bg-danger" role="progressbar"
+                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div id="NoSoporte" class="progress-bar bg-info" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6 class="text-danger font-weight-bold"><span
+                                                            id="numeroSiSoporte"></span> <span
+                                                            id="porcentajeSiSoporte"></span></h6>
+                                                    <div>Si</div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h6 class="text-info font-weight-bold"><span
+                                                            id="numeroNoSoporte"></span> <span
+                                                            id="porcentajeNoSoporte"></span></h6>
+                                                    <div>No</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col custom-col">
+                                    <div class="card card-body" style="padding: 10px">
+                                        <div class="d-flex justify-content-between">
+                                            <h5 class="card-title">Dev. Proveedor</h5>
+                                        </div>
+                                        <div class="progress " style="height: 5px">
+                                            <div id="SiProveedor" class="progress-bar bg-danger" role="progressbar"
+                                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div id="NoProveedor" class="progress-bar bg-info" role="progressbar"
+                                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="text-center mt-2">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h6 class="text-danger font-weight-bold"><span
+                                                            id="numeroSiProveedor"></span> <span
+                                                            id="porcentajeSiProveedor"></span></h6>
+                                                    <div>Si</div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h6 class="text-info font-weight-bold"><span
+                                                            id="numeroNoProveedor"></span> <span
+                                                            id="porcentajeNoProveedor"></span></h6>
+                                                    <div>No</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tabla -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h2>Inventario</h2>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div style="float:right;" data-label="Admin." class="demo-code-button"
+                                                id="divAdmin">
+                                                <div class="parent" id="divBotonesAdmin">
+
+                                                </div>
+                                            </div>
+
+                                            <div style="float:right;">
+                                                <span>&nbsp;</span>
+                                            </div>
+
+                                            <div style="float:right;" data-label="Masivo" class="demo-code-button"
+                                                id="divMasivo">
+                                                <div class="parent" id="divBotonesMasivo">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div style="float:right;">
+                                                <span>&nbsp;</span>
+                                            </div>
+
+                                            <div id="ChecboxAll" style="float:right; display: none;" data-label="Check"
+                                                class="demo-code-button">
+                                                <div class="parent" id="divBotonesCheckbox">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div style="width: 100%;" id="divTablaInventario">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal editar inventario-->
+                            <div id="ModalEditarInventario" class="modal fade bd-example-modal-xl" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloModal">Editar</h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div>
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item" id="navCaracteristicas">
+                                                        <a class="nav-link active" id="caracteristicasTab"
+                                                            data-toggle="tab" href="#caracteristicas" role="tab"
+                                                            aria-controls="caracteristicas"
+                                                            aria-selected="true">Caracteristicas</a>
+                                                    </li>
+                                                    <li class="nav-item" id="navAsignacion">
+                                                        <a class="nav-link" id="asignacionTab" data-toggle="tab"
+                                                            href="#asignacion" role="tab" aria-controls="asignacion"
+                                                            aria-selected="false">Asignación</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="caracteristicas"
+                                                    role="tabpanel" aria-labelledby="caracteristicas-tab">
+                                                    <div class='card-body'>
+                                                        <div id="caracteristicasDiv">
+                                                            <form id="ModalFormInventario" class="needs-validation"
+                                                                novalidate>
+                                                                <div class="form-row">
+                                                                    <div class="form-row col-md-12">
+                                                                        <h5 style="margin: 5px 0px 15px 5px;">Datos</h5>
+                                                                        <div class="form-row col-md-12">
+                                                                            <div class="col-md-4 mb-3">
+                                                                                <label for="SerialEditar">Serial</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="SerialEditar" required>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 mb-3">
+                                                                                <label for="PlacaEditar">Placa</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="PlacaEditar" required>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3">
+                                                                                <label
+                                                                                    for="ProveedorEditar">Proveedor</label>
+                                                                                <select id="ProveedorEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-12 mb-3">
+                                                                                <label
+                                                                                    for="DescripcionEditar">Descripción</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="DescripcionEditar" required>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar! </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3">
+                                                                                <label for="MarcaEditar">Marca</label>
+                                                                                <select id="MarcaEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3">
+                                                                                <label for="NombreActivoEditar">Nombre
+                                                                                    Activo</label>
+                                                                                <select id="NombreActivoEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3"
+                                                                                id="DivProcesadorAct" hidden>
+                                                                                <label
+                                                                                    for="ProcesadorActu">Procesador</label>
+                                                                                <select id="ProcesadorActu"
+                                                                                    class="form-control">
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar! </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3"
+                                                                                id="DivRamAct" hidden>
+                                                                                <label for="RamActu">RAM</label>
+                                                                                <select id="RamActu"
+                                                                                    class="form-control">
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar! </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3"
+                                                                                id="DivDiscoAct" hidden>
+                                                                                <label for="DiscoActu">Disco</label>
+                                                                                <select id="DiscoActu"
+                                                                                    class="form-control">
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar! </div>
+                                                                            </div>
+                                                                            <br>
+                                                                            <br>
+                                                                        </div>
+                                                                        <h5 style="margin: 20px 0px 15px 5px;"
+                                                                            id="nombreUbicacion">
+                                                                            Ubicación</h5>
+                                                                        <div class="form-row col-md-12"
+                                                                            id="divUbicacion">
+                                                                            <div class="form-group col-md-4 mb-3">
+                                                                                <label
+                                                                                    for="CiudadElegirEditar">Ciudad</label>
+                                                                                <select id="CiudadElegirEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3"
+                                                                                id="divSede">
+                                                                                <label for="SedeEditar">Sede</label>
+                                                                                <select id="SedeEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback">Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3"
+                                                                                id="divPiso">
+                                                                                <label for="PisoEditar">Piso</label>
+                                                                                <select id="PisoEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group col-md-4 mb-3"
+                                                                                id="divPuesto">
+                                                                                <label for="PuestoEditar">Puesto</label>
+                                                                                <select id="PuestoEditar"
+                                                                                    class="form-control" required>
+                                                                                </select>
+                                                                                <div class="valid-feedback"> Correcto!
+                                                                                </div>
+                                                                                <div class="invalid-feedback">
+                                                                                    Completar!
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Foto del dispositivo -->
+                                                                        <h5 style="margin: 10px 0px 15px 5px;">Foto</h5>
+                                                                        <div style="margin: 0px 0px 5px 0px;"
+                                                                            class="form-row col-md-12" id="">
+                                                                            <div class="col-md-4 form-row"
+                                                                                id="imagenes">
+                                                                                <div
+                                                                                    class='profile-images-card col-md-5 mb-3'>
+                                                                                    <div class='profile-images'
+                                                                                        id="imagen1">
+                                                                                        <a id="fotoHref"
+                                                                                            class="image-popup" href="">
+                                                                                            <img id="fotoImg"
+                                                                                                style="width:100%; height: 100%;"
+                                                                                                src="" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class='profile-images'
+                                                                                        id="ocultarImg"
+                                                                                        style="overflow: hidden; width: 100%; height: 70%; "
+                                                                                        hidden="hidden">
+                                                                                    </div>
+                                                                                    <div class='custom-file'>
+                                                                                        <label>Foto del
+                                                                                            Dispositivo</label>
+                                                                                        <div>
+                                                                                            <input type='file' class=""
+                                                                                                id='inputFoto'
+                                                                                                accept="image/jpeg , image/jpg"
+                                                                                                required>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="submit"
+                                                                        class="btn btn-light btn-rounded btn-sm"
+                                                                        data-dismiss="modal">Cerrar</button>
+                                                                    <button id="EditInventario" type="submit"
+                                                                        onclick="UpdateInventario()"
+                                                                        class="btn btn-success btn-rounded btn-sm">Actualizar</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="asignacion" role="tabpanel"
+                                                    aria-labelledby="asignacion-tab">
+                                                    <div class='card-body'>
+                                                        <h5 id="tituloAsignacion">Datos de Asignación actual</h5>
+                                                        <br>
+                                                        <div id="asignacionDiv">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal agregar inventario-->
+                            <div id="ModalAgregarInventario" class="modal fade bd-example-modal-xl" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title">Agregar Inventario</h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form id="FormAgregarInventario" class="needs-validation" novalidate>
+                                                <div class="form-row">
+                                                    <h4 style="margin: 5px 0px 15px 5px;">Datos</h4>
+                                                    <div class="form-row col-md-12" id="FormAgregar">
+                                                        <div class="col-md-4 mb-3">
+                                                            <label for="SerialAgregar">Serial</label>
+                                                            <input type="text" class="form-control" id="SerialAgregar"
+                                                                required>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="col-md-4 mb-3">
+                                                            <label for="PlacaAgregar">Placa</label>
+                                                            <input type="text" class="form-control" id="PlacaAgregar"
+                                                                required>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3">
+                                                            <label for="ProveedorAgregar">Proveedor</label>
+                                                            <select id="ProveedorAgregar" class="form-control" required>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="DescripcionAgregar">Descripción</label>
+                                                            <input type="text" class="form-control"
+                                                                id="DescripcionAgregar" required>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3">
+                                                            <label for="MarcaAgregar">Marca</label>
+                                                            <select id="MarcaAgregar" class="form-control" required>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3">
+                                                            <label for="NombreActivoAgregar">Nombre
+                                                                Activo</label>
+                                                            <select id="NombreActivoAgregar" class="form-control"
+                                                                required>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3" id="DivProcesador" hidden>
+                                                            <label for="ProcesadorAgregar">Procesador</label>
+                                                            <select id="ProcesadorAgregar" class="form-control">
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3" id="DivRam" hidden>
+                                                            <label for="RamAgregar">RAM</label>
+                                                            <select id="RamAgregar" class="form-control">
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3" id="DivDisco" hidden>
+                                                            <label for="DiscoAgregar">Disco</label>
+                                                            <select id="DiscoAgregar" class="form-control">
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                    </div>
+                                                    <h4 style="margin: 20px 0px 15px 5px;">Ubicación</h4>
+                                                    <div class="form-row col-md-12" id="divUbicacion">
+                                                        <div class="form-group col-md-4 mb-3">
+                                                            <label for="CiudadElegirAgregar">Ciudad</label>
+                                                            <select id="CiudadElegirAgregar" class="form-control"
+                                                                required>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3" id="divSede">
+                                                            <label for="SedeAgregar">Sede</label>
+                                                            <select id="SedeAgregar" class="form-control" required>
+                                                                <option value="" disabled selected> Elige Ciudad
+                                                                </option>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3" id="divPiso">
+                                                            <label for="PisoAgregar">Piso</label>
+                                                            <select id="PisoAgregar" class="form-control" required>
+                                                                <option value="" disabled selected> Elige Sede
+                                                                </option>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                        <div class="form-group col-md-4 mb-3" id="divPuesto">
+                                                            <label for="PuestoAgregar">Puesto</label>
+                                                            <select id="PuestoAgregar" class="form-control" required>
+                                                                <option value="" disabled selected> Elige Piso
+                                                                </option>
+                                                            </select>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Foto del dispositivo -->
+                                                    <h5 style="margin: 10px 0px 15px 5px;">Foto</h5>
+                                                    <div style="margin: 0px 0px 5px 0px;" class="form-row col-md-12">
+                                                        <div class="col-md-4 form-row" id="imagenes">
+                                                            <div class='profile-images-card col-md-5 mb-3'>
+                                                                <div class='profile-images' id="imagenAgregar">
+                                                                    <a id="fotoHrefAgregar" class="image-popup" href="">
+                                                                        <img id="fotoImgAgregar"
+                                                                            style="width:100%; height: 100%;" src=""
+                                                                            alt="">
+                                                                    </a>
+                                                                </div>
+                                                                <div class='profile-images' id="ocultarImgAgregar"
+                                                                    style="overflow: hidden; width: 100%; height: 70%; "
+                                                                    hidden="hidden">
+                                                                </div>
+                                                                <div class='custom-file'>
+                                                                    <label>Foto del Dispositivo</label>
+                                                                    <div>
+                                                                        <input type='file' class=""
+                                                                            id='inputFotoAgregar'
+                                                                            accept="image/jpeg , image/jpg">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-light btn-rounded btn-sm"
+                                                        data-dismiss="modal">Cerrar</button>
+                                                    <button id="AddInventario" type="submit"
+                                                        onclick="AgregarAlInventario()"
+                                                        class="btn btn-info btn-rounded btn-sm">Agregar</button>
+                                                </div>
+                                            </form>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal cargue masivo -->
+                            <div id="ModalCargueInventario" class="modal fade bd-example-modal-lg" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloModalMasivo"></h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="">
+                                                <p>Haga click <a id="linkDescarga"
+                                                        href="files/CargueMasivoInventario.xlsx" download><span
+                                                            data-i18n="drpdwn.settings"><u>AQUI</u></span></a>
+                                                    para descargar la plantilla y usarla para cargar dispositivos
+                                                    masivamente. Por favor no modifique los nombres de los encabezados y
+                                                    tenga en cuenta las validaciones de cada celda.
+                                                </p>
+                                            </div>
+                                            <br>
+                                            <div class="form-group">
+                                                <div class="align-center">
+                                                    <label for="FileData"></label>
+                                                    <input type="file" accept=".xlsx" class="form-control-file"
+                                                        id="FileData">
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-light btn-rounded btn-sm"
+                                                    data-dismiss="modal">Cerrar</button>
+                                                <button id="InventarioMasivo" type="submit"
+                                                    class="btn btn-info btn-rounded btn-sm"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal devolucion a proveedor -->
+                            <div id="ModalDevolucionProveedor" class="modal fade bd-example-modal-lg" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloMotivoDevolucion"></h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="">
+                                                <p id="parrafoMotivoDevolucion"></p>
+                                            </div>
+                                            <br>
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-row col-md-12">
+                                                        <div class="col-md-12 mb-3">
+                                                            <label for="MotivoDevolucion">Motivo de devolución</label>
+                                                            <textarea id="MotivoDevolucion" class="form-control"
+                                                                aria-describedby="passwordHelpBlock" maxlength="300"
+                                                                required></textarea>
+                                                            <div class="valid-feedback"> Correcto! </div>
+                                                            <div class="invalid-feedback"> Completar! </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-light btn-rounded btn-sm"
+                                                        data-dismiss="modal">Cerrar</button>
+                                                    <button id="DevRecProveedorCheck" hidden="hidden" type="submit"
+                                                        onclick="DevolverRecibiMultiple()"
+                                                        class="btn btn-info btn-rounded btn-sm">Devolver</button>
+                                                    <button id="DevolucionProveedorUnica" hidden="hidden" type="submit"
+                                                        onclick="DevolucionUnica()"
+                                                        class="btn btn-info btn-rounded btn-sm">Devolver</button>
+                                                    <button id="RecibirProveedorUnica" hidden="hidden" type="submit"
+                                                        onclick="RecibirUnica()"
+                                                        class="btn btn-info btn-rounded btn-sm">Recibir</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Historico -->
+                            <div id="ModalHistorico" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloHistorico">Historico</h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <div class="align-center">
+
+                                                    <div style="width: 100%;" id="divTablaHistorico">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Desasignar de dispositivo -->
+                            <div id="ModalDesasignar" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="">Devolución de dispositivo
+                                            </h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="wizard2">
+                                                <h3>Desasignación</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <form id="form1">
+                                                        <div class="form-row">
+                                                            <div class="col-md-4 mb-3">
+                                                                <label for="PlantillaDevolver">Seleccione una
+                                                                    plantilla</label>
+                                                                <select id="PlantillaDevolver" class="form-control"
+                                                                    required>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-3 mb-3">
+                                                                <label for="DesasignarEmpleado">Cedula Empleado</label>
+                                                                <input disabled id="DesasignarEmpleado"
+                                                                    class="form-control" disabled required>
+                                                                </input>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-1 mb-3 text-center">
+                                                                <button style="margin-top: 30px;" type="submit" id="BuscarEmpleadoDesBoton"
+                                                                    onclick="BuscarEmpleado('DesasignarEmpleado')"
+                                                                    class="btn btn-info btn-rounded btn-sm" disabled hidden="hidden">Buscar</button>
+                                                            </div>
+                                                        </div>
+                                                        <h5 id="tituloDevolver" style="display: none;">Datos para
+                                                            realizar la devolución</h5>
+                                                        <div id="DivPlantillaDevolverBD" class="form-row col-md-12">
+                                                        </div>
+                                                        <div id="DivPlantillaDevolver" class="form-row col-md-12">
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Descuentos</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div id="Section2">
+                                                        <form id="form2">
+                                                            <div class="form-row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="Puesto">¿Aplicara descuentos?</label>
+                                                                    <select id="ValidarDescuento" class="form-control"
+                                                                        required>
+                                                                        <option value="" disabled selected>Seleccione...
+                                                                        </option>
+                                                                        <option value="1">Si</option>
+                                                                        <option value="0">No</option>
+                                                                    </select>
+                                                                    <div class="valid-feedback">Correcto!</div>
+                                                                    <div class="invalid-feedback">Completar!</div>
+                                                                </div>
+                                                                <div id="DivPlantillas" class="col-md-4 mb-3"
+                                                                    style="display: none;">
+                                                                    <label for="PlantillasDescuento">Seleccione una
+                                                                        plantilla</label>
+                                                                    <select id="PlantillasDescuento"
+                                                                        class="form-control" required>
+                                                                    </select>
+                                                                    <div class="valid-feedback">Correcto!</div>
+                                                                    <div class="invalid-feedback">Completar!</div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div id="FormularioAdicional" style="display: none;">
+                                                            <h5>Datos para realizar descuentos</h5>
+                                                            <form id="form3">
+                                                                <div id="FormularioNuevo" class="form-row col-md-12">
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Firmas</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h4>Firmas</h4>
+                                                        <p style="font-size: 16px;">No son obligatorias las firmas
+                                                            para crear el documento, sin embargo el acta quedara en
+                                                            estado pendiente.</p>
+                                                        <div id="DivFirmasDevolucion" class="form-row">
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Detalles</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h5>Asignación</h5>
+                                                        <p>Los siguientes son los dispositivos a devolver:</p>
+                                                        <div class="table-responsive">
+                                                            <table id="TablaDetalleDevolucion"
+                                                                class="table table-striped table-bordered">
+                                                                <!-- Contenido de la tabla -->
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div id="DetalleDescuento">
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Asignar de dispositivo -->
+                            <div id="ModalAsignar" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloModalDescuento">Asignación de dispositivo
+                                            </h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="wizard3">
+                                                <h3>Asignación</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <form id="form1Asignar">
+                                                        <div class="form-row">
+                                                            <div class="col-md-5 mb-3">
+                                                                <label for="PlantillaAsignar">Seleccione una
+                                                                    plantilla</label>
+                                                                <select id="PlantillaAsignar" class="form-control"
+                                                                    required>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-3 mb-3">
+                                                                <label for="AsignarEmpleado">Cedula Empleado</label>
+                                                                <input disabled id="AsignarEmpleado"
+                                                                    class="form-control" required>
+                                                                </input>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-1 mb-3 text-center">
+                                                                <button style="margin-top: 30px;" type="submit"
+                                                                    onclick="BuscarEmpleado('AsignarEmpleado')"
+                                                                    class="btn btn-info btn-rounded btn-sm">Buscar</button>
+                                                            </div>
+                                                        </div>
+                                                        <h5 id="tituloAsignar" style="display: none;">Datos para
+                                                            realizar la asignación</h5>
+                                                        <div id="DivPlantillaAsignarBD" class="form-row col-md-12">
+                                                        </div>
+                                                        <div id="DivPlantillaAsignar" class="form-row col-md-12">
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Home Office</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div id="SectionHomeOffice">
+                                                        <form id="formHomeOffice">
+                                                            <div class="form-row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="ValidarHomeOffice">¿Enviara a Home
+                                                                        Office?</label>
+                                                                    <select id="ValidarHomeOffice" class="form-control"
+                                                                        required>
+                                                                        <option value="" disabled selected>Seleccione...
+                                                                        </option>
+                                                                        <option value="1">Si</option>
+                                                                        <option value="0">No</option>
+                                                                    </select>
+                                                                    <div class="valid-feedback">Correcto!</div>
+                                                                    <div class="invalid-feedback">Completar!</div>
+                                                                </div>
+                                                                <div id="DivPlantillasHomeOffice" class="col-md-4 mb-3"
+                                                                    style="display: none;">
+                                                                    <label for="PlantillasHomeOffice">Seleccione una
+                                                                        plantilla</label>
+                                                                    <select id="PlantillasHomeOffice"
+                                                                        class="form-control" required>
+                                                                    </select>
+                                                                    <div class="valid-feedback">Correcto!</div>
+                                                                    <div class="invalid-feedback">Completar!</div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div id="FormularioAdicionalHomeOffice" style="display: none;">
+                                                            <h5>Datos para realizar el envio a Home Office</h5>
+                                                            <form id="formAdicionalHomeOffice">
+                                                                <div id="FormularioNuevoHomeOffice"
+                                                                    class="form-row col-md-12">
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Firmas</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h4>Firmas</h4>
+                                                        <p style="font-size: 16px;">No son obligatorias las firmas
+                                                            para crear el documento, sin embargo el acta quedara en
+                                                            estado pendiente.</p>
+                                                        <div id="DivFirmasAsignacion" class="form-row">
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Detalles</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h5>Asignación</h5>
+                                                        <p>Los siguientes son los dispositivos para asignar:</p>
+                                                        <div class="table-responsive">
+                                                            <table id="TablaDetalleAsignacion"
+                                                                class="table table-striped table-bordered">
+                                                                <!-- Contenido de la tabla -->
+                                                            </table>
+                                                        </div>
+                                                        <div id="DetalleHomeOffice">
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal De homeOffice -->
+                            <div id="ModalHomeOffice" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloModalHomeOffice"></h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <div id="wizard4">
+                                                <h3 id="TituloPrimerWizard"></h3>
+                                                <section class="card card-body border mb-0">
+                                                    <form id="form1HomeOffice">
+                                                        <div class="form-row">
+                                                            <div class="col-md-4 mb-3">
+                                                                <label for="PlantillaHomeOffice">Seleccione una
+                                                                    plantilla</label>
+                                                                <select id="PlantillaHomeOffice" class="form-control"
+                                                                    required>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-3 mb-3">
+                                                                <label for="HomeOfficeEmpleado">Cedula Empleado</label>
+                                                                <input disabled id="HomeOfficeEmpleado"
+                                                                    class="form-control" disabled required>
+                                                                </input>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-1 mb-3 text-center">
+                                                                <button style="margin-top: 30px;" type="submit" id="HomeOfficeBuscarEmpleadoBoton"
+                                                                    onclick="BuscarEmpleado('HomeOfficeEmpleado')"
+                                                                    class="btn btn-info btn-rounded btn-sm" disabled hidden="hidden">Buscar</button>
+                                                            </div>
+                                                        </div>
+                                                        <h5 id="tituloEnvDevHomeOffice" style="display: none;"></h5>
+                                                        <br>
+                                                        <div id="DivPlantillaEnvDevHomeOfficeBD"
+                                                            class="form-row col-md-12">
+                                                        </div>
+                                                        <div id="DivPlantillaEnvDevHomeOffice"
+                                                            class="form-row col-md-12">
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Firmas</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h4>Firmas</h4>
+                                                        <p style="font-size: 16px;">No son obligatorias las firmas
+                                                            para crear el documento, sin embargo el acta quedara en
+                                                            estado pendiente.</p>
+                                                        <div id="DivFirmasHomeOffice" class="form-row">
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Detalles</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h5>Home Office</h5>
+                                                        <p id="TextoDetalleHomeOffice"></p>
+                                                        <div class="table-responsive">
+                                                            <table id="TablaDetalleAEnvDevHomeOffice"
+                                                                class="table table-striped table-bordered">
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Asignar por medio de plantilla Excel -->
+                            <div id="ModalAsignarExcel" class="modal fade bd-example-modal-lg" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="">Asignación de
+                                                dispositivos por medio de plantilla en excel
+                                            </h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="wizard5">
+                                                <h3>Plantilla Excel</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="">
+                                                        <p>Haga click <a id="linkDescargaAsignarExcel"
+                                                                href="files/AsignacionMasiva.xlsx" download><span
+                                                                    data-i18n="drpdwn.settings"><u>AQUI</u></span></a>
+                                                            para descargar la plantilla y usarla para cargar
+                                                            dispositivos
+                                                            masivamente. Por favor no modifique los nombres de los
+                                                            encabezados y
+                                                            tenga en cuenta las validaciones de cada celda.
+                                                        </p>
+                                                    </div>
+                                                    <br>
+                                                    <form id="formCargarExcel">
+                                                        <div class="form-row">
+                                                            <div class="col-md-4 mb-3">
+                                                                <label for="FileDataAsignarExcel"></label>
+                                                                <input type="file" accept=".xlsx"
+                                                                    id="FileDataAsignarExcel" required>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Asignación</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <form id="form1AsignarExcel">
+                                                        <div class="form-row">
+                                                            <div class="col-md-5 mb-3">
+                                                                <label for="PlantillaAsignarExcel">Seleccione una
+                                                                    plantilla</label>
+                                                                <select id="PlantillaAsignarExcel" class="form-control"
+                                                                    required>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-3 mb-3">
+                                                                <label for="EmpleadoAsignarExcel">Cedula
+                                                                    Empleado</label>
+                                                                <input disabled id="EmpleadoAsignarExcel"
+                                                                    class="form-control" equired>
+                                                                </input>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-1 mb-3 text-center">
+                                                                <button style="margin-top: 30px;" type="submit"
+                                                                    onclick="BuscarEmpleado('EmpleadoAsignarExcel')"
+                                                                    class="btn btn-info btn-rounded btn-sm">Buscar</button>
+                                                            </div>
+                                                        </div>
+                                                        <h5 id="tituloAsignarExcel" style="display: none;">Datos para
+                                                            realizar la asignación</h5>
+                                                        <div id="DivPlantillaAsignarExcel" class="form-row col-md-12">
+
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Firmas</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h4>Firmas</h4>
+                                                        <p style="font-size: 16px;">No son obligatorias las firmas
+                                                            para crear el documento, sin embargo el acta quedara en
+                                                            estado pendiente.</p>
+                                                        <div id="DivFirmasAsignacionExcel" class="form-row">
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Detalles</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h5>Asignación</h5>
+                                                        <p>Los siguientes son los dispositivos para asignar:</p>
+                                                        <div class="table-responsive">
+                                                            <table id="TablaDetalleAsignacionExcel"
+                                                                class="table table-striped table-bordered">
+                                                                <!-- Contenido de la tabla -->
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal Desasignar por medio de plantilla Excel -->
+                            <div id="ModalDesasignarExcel" class="modal fade bd-example-modal-lg" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloModalAsignarExcel">Desasignación de
+                                                dispositivos por medio de plantilla en excel
+                                            </h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="wizard6">
+                                                <h3>Plantilla Excel</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="">
+                                                        <p>Haga click <a id="linkDescargaDesasignarExcel"
+                                                                href="files/DevolucionMasiva.xlsx" download><span
+                                                                    data-i18n="drpdwn.settings"><u>AQUI</u></span></a>
+                                                            para descargar la plantilla y usarla para cargar
+                                                            dispositivos
+                                                            masivamente. Por favor no modifique los nombres de los
+                                                            encabezados y
+                                                            tenga en cuenta las validaciones de cada celda.
+                                                        </p>
+                                                    </div>
+                                                    <br>
+                                                    <form id="formCargarExcelDesasignar">
+                                                        <div class="form-row">
+                                                            <div class="col-md-4 mb-3">
+                                                                <label for="FileDataDesasignarExcel"></label>
+                                                                <input type="file" accept=".xlsx"
+                                                                    id="FileDataDesasignarExcel" required>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Desasignación</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <form id="form1DesasignarExcel">
+                                                        <div class="form-row">
+                                                            <div class="col-md-4 mb-3">
+                                                                <label for="PlantillaDesasignarExcel">Seleccione una
+                                                                    plantilla</label>
+                                                                <select id="PlantillaDesasignarExcel"
+                                                                    class="form-control" required>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-3 mb-3">
+                                                                <label for="DesasignarEmpleadoExcel">Cedula Empleado</label>
+                                                                <input disabled id="DesasignarEmpleadoExcel"
+                                                                    class="form-control" disabled required>
+                                                                </input>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-1 mb-3 text-center">
+                                                                <button style="margin-top: 30px;" type="submit" id="BuscarEmpleadoDesExcelBoton"
+                                                                    onclick="BuscarEmpleado('DesasignarEmpleadoExcel')"
+                                                                    class="btn btn-info btn-rounded btn-sm" disabled hidden="hidden">Buscar</button>
+                                                            </div>
+                                                        </div>
+                                                        <h5 id="tituloDesasignarExcel" style="display: none;">Datos para
+                                                            realizar la Desasignación</h5>
+                                                        <div id="DivPlantillaDesasignarExcelBD"
+                                                        class="form-row col-md-12">
+
+                                                        </div>
+                                                        <div id="DivPlantillaDesasignarExcel"
+                                                            class="form-row col-md-12">
+
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Descuentos</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div id="SectionDescuentoExcel">
+                                                        <form id="formDescuentoExcel">
+                                                            <div class="form-row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label for="Puesto">¿Aplicara descuentos?</label>
+                                                                    <select id="ValidarDescuentoExcel"
+                                                                        class="form-control" required>
+                                                                        <option value="" disabled selected>Seleccione...
+                                                                        </option>
+                                                                        <option value="1">Si</option>
+                                                                        <option value="0">No</option>
+                                                                    </select>
+                                                                    <div class="valid-feedback">Correcto!</div>
+                                                                    <div class="invalid-feedback">Completar!</div>
+                                                                </div>
+                                                                <div id="DivPlantillasExcel" class="col-md-4 mb-3"
+                                                                    style="display: none;">
+                                                                    <label for="PlantillasDescuentoExcel">Seleccione una
+                                                                        plantilla</label>
+                                                                    <select id="PlantillasDescuentoExcel"
+                                                                        class="form-control" required>
+                                                                    </select>
+                                                                    <div class="valid-feedback">Correcto!</div>
+                                                                    <div class="invalid-feedback">Completar!</div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                        <div id="FormularioAdicionalExcel" style="display: none;">
+                                                            <h5>Datos para realizar descuentos</h5>
+                                                            <form id="formDescuentoExcel2">
+                                                                <div id="FormularioNuevoExcel"
+                                                                    class="form-row col-md-12">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Firmas</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h4>Firmas</h4>
+                                                        <p style="font-size: 16px;">No son obligatorias las firmas
+                                                            para crear el documento, sin embargo el acta quedara en
+                                                            estado pendiente.</p>
+                                                        <div id="DivFirmasDesasignarExcel" class="form-row">
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Detalles</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h5>Desasignación</h5>
+                                                        <p>Los siguientes son los dispositivos para asignar:</p>
+                                                        <div class="table-responsive">
+                                                            <table id="TablaDetalleDesasignarExcel"
+                                                                class="table table-striped table-bordered">
+                                                                <!-- Contenido de la tabla -->
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div id="DetalleDescuentoExcel">
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal HomeOffice por medio de plantilla Excel -->
+                            <div id="ModalHomeOffcieExcel" class="modal fade bd-example-modal-lg" tabindex="-1"
+                                role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="tituloModalHomeOffcieExcel">Home Offcie por
+                                                medio de plantilla en excel
+                                            </h6>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close"><span
+                                                    class="material-symbols-outlined">close</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="wizard7">
+                                                <h3>Plantilla Excel</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="">
+                                                        <p>Haga click <a id="linkDescargaAsignarExcel"
+                                                                href="files/HomeOfficeMasivo.xlsx" download><span
+                                                                    data-i18n="drpdwn.settings"><u>AQUI</u></span></a>
+                                                            para descargar la plantilla y usarla para enviar o regresar
+                                                            de home office
+                                                            masivamente. Por favor no modifique los nombres de los
+                                                            encabezados y
+                                                            tenga en cuenta las validaciones de cada celda.
+                                                        </p>
+                                                    </div>
+                                                    <br>
+                                                    <form id="formHomeOfficeCargarExcel">
+                                                        <div class="form-row">
+                                                            <div class="col-md-4 mb-4">
+                                                                <label for="SelectHomeOfficeExcel">¿Enviar o
+                                                                    Regresar?</label>
+                                                                <select id="SelectHomeOfficeExcel" class="form-control"
+                                                                    required>
+                                                                    <Option value="" disabled selected>Seleccione...
+                                                                    </Option>
+                                                                    <Option value="Enviar">Enviar</Option>
+                                                                    <Option value="Regresar">Regresar</Option>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-12 mb-3">
+                                                                <label for="FileDataHomeOfficeExcel"></label>
+                                                                <input type="file" accept=".xlsx"
+                                                                    id="FileDataHomeOfficeExcel" required>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Home Offcie</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <form id="form1HomeofficeExcel">
+                                                        <div class="form-row">
+                                                            <div class="col-md-5 mb-3">
+                                                                <label for="PlantillaHomeOfficeExcel">Seleccione una
+                                                                    plantilla</label>
+                                                                <select id="PlantillaHomeOfficeExcel"
+                                                                    class="form-control" required>
+                                                                </select>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-3 mb-3">
+                                                                <label for="HomeOfficeEmpleadoExcel">Cedula Empleado</label>
+                                                                <input disabled id="HomeOfficeEmpleadoExcel"
+                                                                    class="form-control" disabled required>
+                                                                </input>
+                                                                <div class="valid-feedback">Correcto!</div>
+                                                                <div class="invalid-feedback">Completar!</div>
+                                                            </div>
+                                                            <div class="col-md-1 mb-3 text-center">
+                                                                <button style="margin-top: 30px;" type="submit" id="HomeOfficeBuscarEmpleadoExcelBoton"
+                                                                    onclick="BuscarEmpleado('HomeOfficeEmpleadoExcel')"
+                                                                    class="btn btn-info btn-rounded btn-sm" disabled hidden="hidden">Buscar</button>
+                                                            </div>
+                                                        </div>
+                                                        <h5 id="tituloHomeOfficeExcel" style="display: none;">Datos para
+                                                            realizar El Home office</h5>
+                                                        <div id="DivPlantillaHomeOfficeExcelBD"
+                                                        class="form-row col-md-12">
+
+                                                        </div>
+                                                        <div id="DivPlantillaHomeOfficeExcel"
+                                                            class="form-row col-md-12">
+
+                                                        </div>
+                                                    </form>
+                                                </section>
+                                                <h3>Firmas</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h4>Firmas</h4>
+                                                        <p style="font-size: 16px;">No son obligatorias las firmas
+                                                            para crear el documento, sin embargo el acta quedara en
+                                                            estado pendiente.</p>
+                                                        <div id="DivFirmasHomeOfficeExcel" class="form-row">
+
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                                <h3>Detalles</h3>
+                                                <section class="card card-body border mb-0">
+                                                    <div class="col-md-12">
+                                                        <h5>Home Office</h5>
+                                                        <p>Los siguientes son los dispositivos para asignar:</p>
+                                                        <div class="table-responsive">
+                                                            <table id="TablaDetalleHomeOfficeExcel"
+                                                                class="table table-striped table-bordered">
+                                                                <!-- Contenido de la tabla -->
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container-fluid">
+                    <div>© 2023 Inventarios v1.0.0 by <a href="http://bootstrapmb.com">GSS Devs</a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="vendors/bundle.js"></script>
+    <script src="vendors/form-wizard/jquery.steps.min.js"></script>
+    <script src="vendors/prism/prism.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="vendors/dataTable/jquery.dataTables.min.js"></script>
+    <script src="vendors/dataTable/dataTables.bootstrap4.min.js"></script>
+    <script src="vendors/dataTable/dataTables.responsive.min.js"></script>
+
+    <script type="text/javascript" language="javascript" src="vendors/Buttons-2.2.3/js/buttons.colVis.js"></script>
+    <script type="text/javascript" language="javascript" src="vendors/Buttons-2.2.3/js/dataTables.buttons.js"></script>
+
+    <script src="assets/js/examples/sweet-alert.js"></script>
+    <script src="vendors/lightbox/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/select2/js/select2.min.js"></script>
+    <script src="vendors/FileSaver.min.js"></script>
+
+
+    <script src="vendors/select2/js/select2.min.js"></script>
+    <script src="vendors/multiSelect/bootstrap-multiselect.js"></script>
+
+    <script src="https://kit.fontawesome.com/d4a2a4da36.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.full.min.js"></script> -->
+    <script src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/mammoth@1.6.0/lib/index.min.js"></script> -->
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/Inventario/Botones.js"></script>
+    <script src="./assets/js/Inventario/inventario.js"></script>
+    <script src="./assets/js/Inventario/cargueInventario.js"></script>
+    <script src="/assets/js/lib/FileSaver.min.js"></script>
+    <script src="./assets/js/Inventario/Dasboard.js"></script>
+    <script src="./assets/js/Inventario/numeroALetras.js"></script>
+    <script src="./assets/js/Inventario/creacionDocumento.js"></script>
+    <script src="./assets/js/Inventario/HomeOffice.js"></script>
+    <script src="./assets/js/Inventario/HomeOfficeExcel.js"></script>
+    <script src="./assets/js/Inventario/Desasignacion.js"></script>
+    <script src="./assets/js/Inventario/Asignacion.js"></script>
+    <script src="./assets/js/Inventario/AsignacionExcel.js"></script>
+    <script src="./assets/js/Inventario/DesasignacionExcel.js"></script>
+    <script src="assets/js/Inventario/FirmasModales.js"></script>
+    <script src="assets/js/Inventario/EnvioCorreo.js"></script>
+
+</body>
+
+</html>
